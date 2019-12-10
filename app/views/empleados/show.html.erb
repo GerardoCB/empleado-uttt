@@ -1,0 +1,27 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+<h1>Empleado</h1>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @empleado.strNombre %>
+</p>
+
+<p>
+  <strong>Apellido Paterno:</strong>
+  <%= @empleado.strApellidoPaterno %>
+</p>
+
+<p>
+  <strong>Apellido Materno:</strong>
+  <%= @empleado.strApellidoMaterno %>
+</p>
+
+<p>
+  <strong>Fecha Nacimiento:</strong>
+  <%= @empleado.dteFechaNacimiento %>
+</p>
+
+<%= link_to 'Editar', edit_empleado_path(@empleado) %> |
+<%= link_to 'Cancelar', empleados_path %>
+</div>
